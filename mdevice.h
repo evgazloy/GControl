@@ -23,7 +23,11 @@ private:
     QString m_temp = "123.0";
 
     void initSocket();
+    void inData(QByteArray data);
     template <class CMD> void send(CMD cmd);
+
+    void inRegistered(const cmdRegistration_s &data);
+    void inTemp(const cmdTemp_s &data);
 
 signals:
     void pTempChanged();

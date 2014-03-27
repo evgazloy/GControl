@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     window->showMaximized();
 
     m_device.setCertificate("../../GServer/keys/client.pem");
-    m_device.createConnection("zloy-dev", 32345);
+    m_device.createConnection("sinvent40", 32345);
 
     return app.exec();
 }

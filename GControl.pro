@@ -23,7 +23,8 @@ OTHER_FILES += \
 
 HEADERS += \
     mdevice.h \
-    tcpcommands.h
+    tcpcommands.h \
+    mprotocol.h
 
 LIBS += -L$$PWD/../../libGSocket/bin/ -lGSocket
 
